@@ -32,6 +32,7 @@ permalink: /
   </div>
 </section>
 
+{% include partners-banner.html %}
 {% include thrust-divider.html %}
 
 <section class="section wrap">
