@@ -24,7 +24,7 @@ recruiting: true              # 모집 배너 표시 여부 (true/false)
 recruiting_text: "2027년 전기 석사/박사과정 대학원생을 상시 모집합니다. 관심 있는 분은 Contact 페이지를 확인해주세요."
 
 url: "https://apcl.chungbuk.ac.kr"
-baseurl: "/apcl-lab-site"
+baseurl: "/site-C-V2"
 
 markdown: kramdown
 plugins:
