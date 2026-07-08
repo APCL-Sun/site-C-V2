@@ -151,7 +151,7 @@ h1,h2,h3,h4{
 }
 .hero-media video, .hero-media iframe, .hero-media img.hero-gif{
   width: 100%; height: 100%; object-fit: cover;
-  opacity: 0.95;
+  opacity: 0.99;
 }
 .hero-media::after{
   content: "";

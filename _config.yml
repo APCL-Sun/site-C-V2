@@ -2,7 +2,7 @@
 # APCL 연구실 홈페이지 - 기본 설정 파일
 # 이 파일은 '관리자(교수님/랩장)'만 수정하는 것을 권장합니다.
 # =====================================================
-
+site_logo: "/assets/images/logo/logo-APCL.png"
 title: "APCL"
 lab_name_kr: "고급추진연소연구실"
 lab_name_en: "Advanced Propulsion Combustion Lab"
