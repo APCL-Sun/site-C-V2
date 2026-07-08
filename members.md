@@ -23,7 +23,8 @@ permalink: /members/
   <div class="member-panel" id="panel-prof">
     {% assign p = site.data.members.professor %}
     <div class="prof-card">
-      <img class="member-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name_kr }} 교수 사진" onerror="this.style.opacity=0">
+      <img class="member-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name_kr }} 교수 사진" onerror="this.style.opacity=0"
+        {% if p.photo_alt and p.photo_alt != "" %}data-alt="{{ p.photo_alt | relative_url }}"{% endif %}>
       <div>
         <h3>{{ p.name_kr }} <span class="en">({{ p.name_en }})</span></h3>
         <div class="role">{{ p.position }}</div>
@@ -39,7 +40,8 @@ permalink: /members/
     <div class="member-grid">
       {% for m in site.data.members.phd_students %}
       <div class="member-card">
-        <img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name_kr }} 사진" onerror="this.style.opacity=0">
+        <img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name_kr }} 사진" onerror="this.style.opacity=0"
+          {% if m.photo_alt and m.photo_alt != "" %}data-alt="{{ m.photo_alt | relative_url }}"{% endif %}>
         <h3>{{ m.name_kr }}</h3>
         <div class="en">{{ m.name_en }}</div>
         <div class="role">{{ m.year }}</div>
@@ -54,7 +56,8 @@ permalink: /members/
     <div class="member-grid">
       {% for m in site.data.members.ms_students %}
       <div class="member-card">
-        <img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name_kr }} 사진" onerror="this.style.opacity=0">
+        <img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name_kr }} 사진" onerror="this.style.opacity=0"
+          {% if m.photo_alt and m.photo_alt != "" %}data-alt="{{ m.photo_alt | relative_url }}"{% endif %}>
         <h3>{{ m.name_kr }}</h3>
         <div class="en">{{ m.name_en }}</div>
         <div class="role">{{ m.year }}</div>

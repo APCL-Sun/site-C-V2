@@ -210,6 +210,29 @@ h1,h2,h3,h4{
   fill: none; stroke: url(#thrustGrad); stroke-width: 2;
 }
 
+/* ---------- Partners / affiliation banner ---------- */
+.partners-banner{
+  padding: 36px 0 28px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.partners-line{
+  color: var(--flame-2); font-family: var(--font-mono); font-size: 0.82rem;
+  letter-spacing: 0.02em; margin-bottom: 22px;
+}
+.partners-logos{
+  display: flex; align-items: center; justify-content: center;
+  gap: 40px; flex-wrap: wrap; margin-bottom: 14px;
+}
+.partner-logo{ display: inline-flex; align-items: center; }
+.partner-logo img{
+  height: 44px; width: auto; max-width: 180px; object-fit: contain;
+  filter: grayscale(1) brightness(1.6);
+  opacity: 0.75; transition: opacity .2s ease, filter .2s ease;
+}
+.partner-logo:hover img{ opacity: 1; filter: none; }
+.partners-updated{ color: var(--text-faint); font-family: var(--font-mono); font-size: 0.75rem; }
+
 /* ---------- Sections ---------- */
 .section{ padding: 72px 0; border-bottom: 1px solid var(--line); }
 .section:last-of-type{ border-bottom: none; }
@@ -333,7 +356,9 @@ h1,h2,h3,h4{
   width: 100%; aspect-ratio: 3/4; object-fit: cover;
   border-radius: var(--radius); background: var(--bg-panel);
   border: 1px solid var(--line); margin-bottom: 10px;
+  transition: transform 0.14s ease;
 }
+.member-photo.photo-flip{ transform: scaleX(0); }
 .member-card h3{ font-size: 1rem; margin-bottom: 2px; }
 .member-card .role{ color: var(--flame-2); font-size: 0.82rem; font-family: var(--font-mono); }
 .member-card .en{ color: var(--text-faint); font-size: 0.85rem; }

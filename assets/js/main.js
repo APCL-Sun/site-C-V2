@@ -30,6 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // ---------- 멤버 사진 이스터에그 (더블클릭하면 다른 사진으로) ----------
+  document.querySelectorAll(".member-photo[data-alt]").forEach(function (img) {
+    var altSrc = img.getAttribute("data-alt");
+    var origSrc = img.getAttribute("src");
+    img.addEventListener("dblclick", function () {
+      img.classList.add("photo-flip");
+      setTimeout(function () {
+        img.src = (img.src.indexOf(altSrc) !== -1) ? origSrc : altSrc;
+      }, 140);
+      setTimeout(function () {
+        img.classList.remove("photo-flip");
+      }, 280);
+    });
+  });
+
   // =====================================================
   // 공용 게시판 빌더 (News & Gallery / Publications 공용 로직)
   // =====================================================
