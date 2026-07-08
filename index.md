@@ -25,11 +25,6 @@ permalink: /
     <h1>{{ site.lab_name_kr }}
       <span class="en">{{ site.lab_name_en }} (APCL)</span>
     </h1>
-    <p class="lead">
-      고체·액체 추진기관과 연소 현상을 실험과 해석으로 함께 연구합니다.
-      추력기 연소시험, 연소 불안정성 진단, 친환경 추진제 개발을 중심으로
-      실제 발사체·엔진 개발에 기여하는 데이터를 만듭니다.
-    </p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">연구 분야 보기</a>
       <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">대학원 모집 안내</a>
