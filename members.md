@@ -30,6 +30,24 @@ permalink: /members/
         <div class="role">{{ p.position }}</div>
         <div class="email"><a href="mailto:{{ p.email }}">{{ p.email }}</a></div>
         <p class="bio">{{ p.bio }}</p>
+
+        {% if p.education and p.education.size > 0 %}
+        <div class="prof-detail">
+          <h4>학력</h4>
+          <ul class="prof-list">
+            {% for e in p.education %}<li>{{ e }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if p.career and p.career.size > 0 %}
+        <div class="prof-detail">
+          <h4>경력</h4>
+          <ul class="prof-list">
+            {% for c in p.career %}<li{% if c.highlight %} class="highlight"{% endif %}>{{ c.text }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -46,6 +64,7 @@ permalink: /members/
         <div class="en">{{ m.name_en }}</div>
         <div class="role">{{ m.year }}</div>
         <div class="email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></div>
+        {% if m.research and m.research != "" %}<div class="research">{{ m.research }}</div>{% endif %}
       </div>
       {% endfor %}
     </div>
@@ -62,6 +81,24 @@ permalink: /members/
         <div class="en">{{ m.name_en }}</div>
         <div class="role">{{ m.year }}</div>
         <div class="email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></div>
+        {% if m.research and m.research != "" %}<div class="research">{{ m.research }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if site.data.members.undergrad_students and site.data.members.undergrad_students.size > 0 %}
+    <div class="member-group-title">학부생 / Undergraduate Students</div>
+    <div class="member-grid">
+      {% for m in site.data.members.undergrad_students %}
+      <div class="member-card">
+        <img class="member-photo" src="{{ m.photo | relative_url }}" alt="{{ m.name_kr }} 사진" onerror="this.style.opacity=0"
+          {% if m.photo_alt and m.photo_alt != "" %}data-alt="{{ m.photo_alt | relative_url }}"{% endif %}>
+        <h3>{{ m.name_kr }}</h3>
+        <div class="en">{{ m.name_en }}</div>
+        <div class="role">{{ m.year }}</div>
+        <div class="email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></div>
+        {% if m.research and m.research != "" %}<div class="research">{{ m.research }}</div>{% endif %}
       </div>
       {% endfor %}
     </div>
@@ -70,16 +107,18 @@ permalink: /members/
 
   <div class="member-panel" id="panel-alumni" style="display:none;">
     {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
-    <ul class="pub-list">
+    <div class="member-grid">
       {% for a in site.data.members.alumni %}
-      <li style="grid-template-columns: 1fr;">
-        <div>
-          <strong>{{ a.name_kr }}</strong> — {{ a.degree }}
-          {% if a.current %}<span class="pub-meta">현재: {{ a.current }}</span>{% endif %}
-        </div>
-      </li>
+      <div class="member-card">
+        {% if a.photo and a.photo != "" %}
+        <img class="member-photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_kr }} 사진" onerror="this.style.opacity=0">
+        {% endif %}
+        <h3>{{ a.name_kr }}</h3>
+        <div class="role">{{ a.degree }}</div>
+        {% if a.current %}<div class="email">현재: {{ a.current }}</div>{% endif %}
+      </div>
       {% endfor %}
-    </ul>
+    </div>
     {% else %}
     <p class="section-sub">등록된 졸업생이 없습니다.</p>
     {% endif %}

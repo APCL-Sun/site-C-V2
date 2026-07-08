@@ -13,7 +13,30 @@ professor:
   email: "hong@chungbuk.ac.kr"
   photo: "/assets/images/members/PROF-A.png"
   photo_alt: "/assets/images/members/PROF-B.png"   # 더블클릭하면 이 사진으로
-  bio: "충북대학교 기계공학부 교수. 고체/액체 추진기관 연소, 연소 불안정성 분야를 연구합니다."
+  bio: "충북대학교 기계공학부 교수"
+  education:
+    - "서울대학교 기계항공공학부 학사 (99)"
+    - "서울대학교 항공우주공학과 석사 (01)"
+    - "서울대학교 기계항공공학부 박사 (05)"
+  career:
+    - text: "24-현재 : 우주항공청 우주수송부문 사업추진위원회 위원"
+    - text: "24-25 : 미국 메릴랜드대학교 방문교수"
+    - text: "23-현재 : 우주 분야 산업기술보호 전문위원회 위원"
+    - text: "22-23 : 달 탐사 2단계 사업 검토위원회 위원"
+    - text: "21-22 : 차세대 발사체 개발사업 총괄기획위원회 위원"
+    - text: "18-21 : 한국연구재단 국책연구본부 전문위원(RB)"
+      highlight: true
+    - text: "25-현재 : 한국항공우주학회 추진부문 간사"
+    - text: "22-현재 : Atomization and Sprays Editorial Board Member"
+      highlight: true
+    - text: "17-23 : 한국연소학회 편집이사"
+    - text: "16-현재 : 한국분무공학회 국제이사/총무이사"
+    - text: "16-현재 : 한국추진공학회 편집이사"
+    - text: "15-16 : 대한기계학회 충청지회 재무이사"
+    - text: "13-현재 : 충북대학교 기계공학부 교수"
+      highlight: true
+    - text: "05-13 : 한국항공우주연구원 선임연구원"
+      highlight: true
 
 # 박사과정 (아래 형식으로 필요한 만큼 추가하세요)
 phd_students:
@@ -21,6 +44,7 @@ phd_students:
     name_en: "Cheolsu Kim"
     year: "박사과정 2년차"
     email: "kim.cs@chungbuk.ac.kr"
+    research: "여기에 짧게 연구 분야 한 줄"
     photo: "/assets/images/members/JHD-A.png"
     photo_alt: "/assets/images/members/JHD-B.png"   # 더블클릭하면 이 사진으로
 
@@ -28,27 +52,68 @@ phd_students:
     name_en: "Cheolsu Kim"
     year: "박사과정 1년차"
     email: "kim.cs@chungbuk.ac.kr"
+    research: "여기에 짧게 연구 분야 한 줄"
     photo: "/assets/images/members/CYS-A.png"
     photo_alt: "/assets/images/members/CYS-B.png"   # 더블클릭하면 이 사진으로
 
 # 석사과정
 ms_students:
-  - name_kr: "정지원"
-    name_en: "Younghee Lee"
+  - name_kr: "박정호"
+    name_en: ""
     year: "석사과정 2년차"
-    email: "lee.yh@chungbuk.ac.kr"
-    photo: "/assets/images/members/lee-yh.jpg"
-  - name_kr: "박민수"
-    name_en: "Minsu Park"
-    year: "석사 2차"
-    email: "park.ms@chungbuk.ac.kr"
-    photo: "/assets/images/members/park-ms.jpg"
+    email: ""
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/PJH-A.png"
+    photo_alt: "/assets/images/members/PJH-B.png"
+  - name_kr: "정웅태"
+    name_en: ""
+    year: "석사과정 2년차"
+    email: ""
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/JWT-A.png"
+    photo_alt: "/assets/images/members/JWT-B.png"
+  - name_kr: "최기훈"
+    name_en: ""
+    year: "석사과정 2년차"
+    email: ""
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/CGH-A.png"
+    photo_alt: "/assets/images/members/CGH-B.png"
+  - name_kr: "정지원"
+    name_en: ""
+    year: "석사과정 2년차"
+    email: ""
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/JJW-A.png"
+    photo_alt: "/assets/images/members/JJW-B.png"
+  - name_kr: "이준형"
+    name_en: ""
+    year: "석사과정 1년차"
+    email: ""
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/LJH-A.png"
+    photo_alt: "/assets/images/members/LJH-B.png"
+
+# 학부생
+undergrad_students:
+  - name_kr: "박연하"
+    name_en: "영문 이름"
+    year: "학부연구생"
+    email: "이메일"
+    research: "여기에 짧게 연구 분야 한 줄"
+    photo: "/assets/images/members/PYH-A.png"
+    photo_alt: "/assets/images/members/PYH-B.png"
 
 # 졸업생 (선택 사항 - 필요 없으면 이 항목 전체를 지워도 됩니다)
 alumni:
-  - name_kr: "최지훈"
+  - name_kr: "홍길동"
+    name_en: "영문 이름"
     degree: "석사 졸업 (2025)"
     current: "한화에어로스페이스"
-  - name_kr: "정수아"
-    degree: "석사 졸업 (2024)"
+    photo: "/assets/images/members/.jpg"
+
+  - name_kr: "길동홍"
+    name_en: "영문 이름"
+    degree: "석사 졸업 (2025)"
     current: "한국항공우주연구원(KARI)"
+    photo: "/assets/images/members/.jpg"

@@ -363,6 +363,10 @@ h1,h2,h3,h4{
 .member-card .role{ color: var(--flame-2); font-size: 0.82rem; font-family: var(--font-mono); }
 .member-card .en{ color: var(--text-faint); font-size: 0.85rem; }
 .member-card .email{ font-size: 0.82rem; margin-top: 6px; }
+.member-card .research{
+  font-size: 0.82rem; color: var(--text-faint); margin-top: 6px;
+  padding-top: 6px; border-top: 1px dashed var(--line);
+}
 
 .prof-card{
   display: grid; grid-template-columns: 200px 1fr; gap: 28px;
@@ -371,6 +375,21 @@ h1,h2,h3,h4{
 }
 .prof-card .member-photo{ aspect-ratio: 3/4; margin-bottom: 0; }
 .prof-card .bio{ color: var(--text-dim); margin-top: 10px; font-size: 0.95rem; }
+.prof-detail{ margin-top: 20px; }
+.prof-detail h4{
+  font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em;
+  color: var(--flame-2); text-transform: uppercase; margin-bottom: 8px;
+}
+.prof-list{ list-style: none; margin: 0; padding: 0; }
+.prof-list li{
+  position: relative; padding-left: 14px; margin-bottom: 5px;
+  color: var(--text-dim); font-size: 0.9rem; line-height: 1.5;
+}
+.prof-list li::before{
+  content: "–"; position: absolute; left: 0; color: var(--text-faint);
+}
+.prof-list li.highlight{ color: var(--text); font-weight: 600; }
+.prof-list li.highlight::before{ color: var(--flame-2); }
 @media (max-width: 600px){
   .prof-card{ grid-template-columns: 140px 1fr; }
 }
