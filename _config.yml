@@ -10,13 +10,13 @@ department: "충북대학교 기계공학부"
 university: "Chungbuk National University"
 description: "충북대학교 기계공학부 고급추진연소연구실(APCL) 공식 홈페이지입니다."
 
-email: "apcl@chungbuk.ac.kr"      # 실제 대표 이메일로 변경하세요
-address_kr: "충청북도 청주시 서원구 충대로 1, 충북대학교 공학관 000호"
+email: "kbahn@cbnu.ac.kr"      # 실제 대표 이메일로 변경하세요
+address_kr: "충청북도 청주시 서원구 충대로 1, 충북대학교 공학관 117호"
 address_en: "Room 000, Engineering Bldg., Chungbuk National University, Cheongju, Korea"
 gmap_query: "충북대학교 공학관"     # 구글맵 검색어 (Contact 페이지 지도용)
 
 # 홈 화면 상단 배경 미디어. 아래 셋 중 "하나만" 채우세요. (우선순위: GIF > 영상파일 > 유튜브)
-home_hero_gif: ""             # 예: "/assets/images/hero/thruster.gif" (움짤/GIF 사용 시)
+home_gif_file: "/assets/videos/home.gif"            # 예: "/assets/videos/hero.gif" (GIF를 첫 화면에 크게 표시)
 home_video_file: ""          # 예: "/assets/videos/thruster.mp4" (직접 업로드한 영상 사용 시)
 home_video_youtube_id: ""     # 예: "dQw4w9WgXcQ" (유튜브 영상 사용 시)
 
@@ -24,7 +24,7 @@ recruiting: true              # 모집 배너 표시 여부 (true/false)
 recruiting_text: "2027년 전기 석사/박사과정 대학원생을 상시 모집합니다. 관심 있는 분은 Contact 페이지를 확인해주세요."
 
 url: "https://apcl.chungbuk.ac.kr"
-baseurl: ""
+baseurl: "/apcl-lab-site"
 
 markdown: kramdown
 plugins:
