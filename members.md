@@ -106,9 +106,13 @@ permalink: /members/
   </div>
 
   <div class="member-panel" id="panel-alumni" style="display:none;">
-    {% if site.data.members.alumni and site.data.members.alumni.size > 0 %}
+    {% assign phd_alumni = site.data.members.alumni.phd %}
+    {% assign ms_alumni = site.data.members.alumni.ms %}
+
+    {% if phd_alumni and phd_alumni.size > 0 %}
+    <div class="member-group-title">박사 졸업생 / PhD Alumni</div>
     <div class="member-grid">
-      {% for a in site.data.members.alumni %}
+      {% for a in phd_alumni %}
       <div class="member-card">
         {% if a.photo and a.photo != "" %}
         <img class="member-photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_kr }} 사진" onerror="this.style.opacity=0">
@@ -119,7 +123,25 @@ permalink: /members/
       </div>
       {% endfor %}
     </div>
-    {% else %}
+    {% endif %}
+
+    {% if ms_alumni and ms_alumni.size > 0 %}
+    <div class="member-group-title">석사 졸업생 / MS Alumni</div>
+    <div class="member-grid">
+      {% for a in ms_alumni %}
+      <div class="member-card">
+        {% if a.photo and a.photo != "" %}
+        <img class="member-photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_kr }} 사진" onerror="this.style.opacity=0">
+        {% endif %}
+        <h3>{{ a.name_kr }}</h3>
+        <div class="role">{{ a.degree }}</div>
+        {% if a.current %}<div class="email">현재: {{ a.current }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if (phd_alumni == nil or phd_alumni.size == 0) and (ms_alumni == nil or ms_alumni.size == 0) %}
     <p class="section-sub">등록된 졸업생이 없습니다.</p>
     {% endif %}
   </div>
