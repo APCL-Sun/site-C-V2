@@ -1,0 +1,45 @@
+# =====================================================
+# publications.yml — 논문 / 특허 / 학술대회 발표 목록
+# 이 파일은 후배님들이 직접 수정하는 파일입니다.
+# 각 항목 아래 예시를 복사해서 year(연도), title(제목), authors(저자),
+# venue(학술지/발표처) 등을 바꿔주시면 됩니다.
+# 최신 연구가 위쪽에 오도록 순서대로 추가해주세요 (자동 정렬되지 않습니다).
+# =====================================================
+
+# 국내논문
+domestic:
+  - year: 2026
+    title: "고체 로켓 모터의 연소 불안정성 억제를 위한 배플 설계 연구"
+    authors: "김철수, 홍길동"
+    venue: "한국추진공학회지, 30(2), pp.12-20"
+
+  - year: 2025
+    title: "하이브리드 로켓 추진제 배합비에 따른 연소 특성 실험 연구"
+    authors: "이영희, 홍길동"
+    venue: "한국항공우주학회지, 53(4), pp.301-310"
+
+# 국외논문
+international:
+  - year: 2025
+    title: "Experimental Study on Combustion Instability of a Small-Scale Solid Rocket Motor"
+    authors: "C. Kim, G. Hong"
+    venue: "Journal of Propulsion and Power, Vol.41, No.3"
+
+# 특허
+patents:
+  - year: 2025
+    title: "고온 연소 환경용 다채널 압력 계측 장치"
+    inventors: "홍길동, 김철수"
+    number: "출원번호 10-2025-00000000"
+
+# 학술대회 발표
+conferences:
+  - year: 2026
+    title: "하이브리드 로켓 연소 불안정성에 관한 실험적 연구"
+    authors: "김철수, 홍길동"
+    venue: "2026 한국추진공학회 하계학술대회 (우수발표논문상)"
+
+  - year: 2025
+    title: "친환경 고체 추진제의 연소 특성 비교 연구"
+    authors: "박민수, 홍길동"
+    venue: "2025 한국항공우주학회 추계학술대회"

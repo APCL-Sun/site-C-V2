@@ -1,0 +1,45 @@
+# =====================================================
+# members.yml — 연구실 구성원 정보
+# 이 파일은 후배님들이 직접 수정하는 파일입니다.
+# 아래 예시를 그대로 복사해서 이름/이메일/사진 경로만 바꾸면 됩니다.
+# 사진은 assets/images/members/ 폴더에 넣고 파일명을 photo 항목에 적어주세요.
+# 콜론(:) 뒤에는 반드시 띄어쓰기 한 칸이 있어야 합니다.
+# =====================================================
+
+professor:
+  name_kr: "홍길동"
+  name_en: "Gil-dong Hong"
+  position: "지도교수 / Professor"
+  email: "hong@chungbuk.ac.kr"
+  photo: "/assets/images/members/professor.jpg"
+  bio: "충북대학교 기계공학부 교수. 고체/액체 추진기관 연소, 연소 불안정성 분야를 연구합니다."
+
+# 박사과정 (아래 형식으로 필요한 만큼 추가하세요)
+phd_students:
+  - name_kr: "김철수"
+    name_en: "Cheolsu Kim"
+    year: "박사 3차"
+    email: "kim.cs@chungbuk.ac.kr"
+    photo: "/assets/images/members/kim-cs.jpg"
+
+# 석사과정
+ms_students:
+  - name_kr: "이영희"
+    name_en: "Younghee Lee"
+    year: "석사 1차"
+    email: "lee.yh@chungbuk.ac.kr"
+    photo: "/assets/images/members/lee-yh.jpg"
+  - name_kr: "박민수"
+    name_en: "Minsu Park"
+    year: "석사 2차"
+    email: "park.ms@chungbuk.ac.kr"
+    photo: "/assets/images/members/park-ms.jpg"
+
+# 졸업생 (선택 사항 - 필요 없으면 이 항목 전체를 지워도 됩니다)
+alumni:
+  - name_kr: "최지훈"
+    degree: "석사 졸업 (2025)"
+    current: "한화에어로스페이스"
+  - name_kr: "정수아"
+    degree: "석사 졸업 (2024)"
+    current: "한국항공우주연구원(KARI)"
