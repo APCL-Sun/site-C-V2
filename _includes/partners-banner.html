@@ -1,0 +1,22 @@
+<!-- 소속/제휴 로고 배너 -->
+<section class="partners-banner">
+  <div class="wrap">
+    <p class="partners-line">
+      {{ site.lab_name_en }} (APCL), {{ site.department }}, {{ site.university }}
+    </p>
+    <div class="partners-logos">
+      {% for p in site.partners %}
+        {% if p.url and p.url != "" %}
+        <a class="partner-logo" href="{{ p.url }}" target="_blank" rel="noopener">
+          <img src="{{ p.logo | relative_url }}" alt="{{ p.name }}" onerror="this.closest('.partner-logo').style.display='none'">
+        </a>
+        {% else %}
+        <span class="partner-logo">
+          <img src="{{ p.logo | relative_url }}" alt="{{ p.name }}" onerror="this.closest('.partner-logo').style.display='none'">
+        </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="partners-updated">Updated at {{ site.time | date: "%B %-d, %Y" }}</p>
+  </div>
+</section>
