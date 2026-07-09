@@ -7,88 +7,63 @@
 # 사진은 assets/images/news/ 폴더에 먼저 올린 뒤 파일명을 images: 아래에 적어주세요.
 # 사진이 없으면 images: [] 로 두면 됩니다.
 # =====================================================
+#- date: "날짜"
+# title: "제목"
+# blocks:
+#  - type: text
+#    text: >
+#      글 내용...
+#  - type: images
+#    size: normal 여러 장 나란히 large # 1장 크게
+#    images:
+#      - "/assets/images/news/사진1.jpg"
+#      - "/assets/images/news/사진2.jpg
+
+- date: "2026.02.23"
+  title: "2026년 석박사 졸업식1"
+  blocks:
+    - type: text
+      text: >
+        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
+        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+    - type: images
+      size: large
+      images:
+        - "/assets/images/news/260223.png"
 
 
 - date: "2026.02.23"
   title: "2026년 석박사 졸업식1"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-
-
-- date: "2026.02.25"
-  title: "2026년 석박사 졸업식2"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-
-
-
-- date: "2026.03.01"
-  title: "2026년 석박사 졸업식3"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-
-- date: "2026.03.01"
-  title: "2026년 석박사 졸업식3"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-
-- date: "2026.03.01"
-  title: "2026년 석박사 졸업식9"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-
-- date: "2026.03.01"
-  title: "2026년 석박사 졸업식 5장 테스트"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-  content: >
-    ㅇㅇㅇㅇ
-  images:
-    - "/assets/images/news/260223.png"
-  content: >
-    ㅇㅇㅇㅇ
-  images:
-    - "/assets/images/news/260223.png"
-    - "/assets/images/news/260223.png"
-
+  blocks:
+    - type: text
+      text: >
+        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
+        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+    - type: images
+      size: normal
+      images:
+        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223.png"
 
 - date: "2026.02.23"
   title: "2026년 석박사 졸업식1"
-  content: >
-    2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-    금년도 연구 계획을 공유하는 시간을 가졌습니다.
-  images:
-    - "/assets/images/news/260223.png"
+  blocks:
+    - type: text
+      text: >
+        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
+        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+    - type: images
+      size: normal
+      images:
+        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223.png"
+    - type: text
+      text: >
+        테스트를 해보까남
+    - type: images
+      size: normal
+      images:
+        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223.png"
