@@ -19,51 +19,59 @@
 #      - "/assets/images/news/사진1.jpg"
 #      - "/assets/images/news/사진2.jpg
 
-- date: "2026.02.23"
-  title: "2026년 석박사 졸업식1"
+- date: "2026.05.19"
+  title: "2026년 한국추진공학회 춘계학술대회"
   blocks:
     - type: text
       text: >
-        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+        2026년 5월 19일(화)~22일(금)까지 롯데호텔 제주에서 개최되었습니다.
+        APCL 연구원들도 한국추진공학회 춘계학술대회에 참가했습니다.
     - type: images
       size: large
       images:
-        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260519-1.jpg"
+    - type: images
+      size: normal
+      images:
+        - "/assets/images/news/260519-2.jpg"
+        - "/assets/images/news/260519-3.jpg"
+        - "/assets/images/news/260519-4.jpg"
+        - "/assets/images/news/260519-5.jpg"
+        - "/assets/images/news/260519-6.jpg"
+        - "/assets/images/news/260519-7.jpg"
+        - "/assets/images/news/260519-8.jpg"
+        - "/assets/images/news/260519-9.jpg"
 
-
-- date: "2026.02.23"
-  title: "2026년 석박사 졸업식1"
+- date: "2026.05.15"
+  title: "2026년 스승의 날"
   blocks:
     - type: text
       text: >
-        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+        교수님!! 스승의 은혜에 늘 감사드립니다.
     - type: images
-      size: normal
+      size: large
       images:
-        - "/assets/images/news/260223.png"
-        - "/assets/images/news/260223.png"
-        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260515-1.jpg"
+
 
 - date: "2026.02.23"
-  title: "2026년 석박사 졸업식1"
+  title: "2026년 석박사 졸업식"
   blocks:
     - type: text
       text: >
-        2026학년도 전기 신입 대학원생 2명이 합류하였습니다. 연구실 전체 워크숍을 통해
-        금년도 연구 계획을 공유하는 시간을 가졌습니다.
+        강철웅 박사, 김민상 석사, 이승현 석사 졸업을 축하드립니다!!! 
+    - type: images
+      size: large
+      images:
+        - "/assets/images/news/260223-1.jpg"
+        - "/assets/images/news/260223-2.jpg"
     - type: images
       size: normal
       images:
-        - "/assets/images/news/260223.png"
-        - "/assets/images/news/260223.png"
-        - "/assets/images/news/260223.png"
-    - type: text
-      text: >
-        테스트를 해보까남
+        - "/assets/images/news/260223-3.jpg"
+        - "/assets/images/news/260223-4.jpg"
     - type: images
-      size: normal
+      size: large
       images:
-        - "/assets/images/news/260223.png"
-        - "/assets/images/news/260223.png"
+        - "/assets/images/news/260223-5.jpg"
+
