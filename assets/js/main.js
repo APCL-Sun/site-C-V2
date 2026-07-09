@@ -94,8 +94,23 @@ document.addEventListener("DOMContentLoaded", function () {
       var q = newsQuery.toLowerCase();
       return newsItems.filter(function (item) {
         return (item.title || "").toLowerCase().indexOf(q) !== -1 ||
-               (item.content || "").toLowerCase().indexOf(q) !== -1;
+               getNewsText(item).toLowerCase().indexOf(q) !== -1;
       });
+    }
+
+    // blocks 배열에서 텍스트 블록만 모아 하나의 문자열로 (검색용)
+    function getNewsText(item) {
+      return (item.blocks || [])
+        .filter(function (b) { return b.type === "text"; })
+        .map(function (b) { return b.text || ""; })
+        .join(" ");
+    }
+
+    // blocks 배열에서 이미지 총 개수
+    function getNewsImageCount(item) {
+      return (item.blocks || [])
+        .filter(function (b) { return b.type === "images"; })
+        .reduce(function (sum, b) { return sum + (b.images || []).length; }, 0);
     }
 
     function renderNews() {
@@ -108,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pageItems.forEach(function (item) {
         var row = document.createElement("div");
         row.className = "board-row";
-        var imgCount = (item.images || []).length;
+        var imgCount = getNewsImageCount(item);
         row.innerHTML =
           '<div class="date">' + escapeHtml(item.date) + '</div>' +
           '<div class="title">' + escapeHtml(item.title) + '</div>' +
@@ -138,20 +153,29 @@ document.addEventListener("DOMContentLoaded", function () {
     var newsModalClose = document.getElementById("newsModalClose");
     var newsModalBackdrop = document.getElementById("newsModalBackdrop");
 
+    function renderNewsBlock(block) {
+      if (block.type === "text") {
+        return '<p class="content-block">' + escapeHtml(block.text) + '</p>';
+      }
+      if (block.type === "images") {
+        var imgs = (block.images || []).filter(Boolean);
+        if (imgs.length === 0) return "";
+        var cls = "board-modal-gallery" + (block.size === "large" ? " large" : "");
+        var html = imgs.map(function (src) {
+          var full = (window.SITE_BASEURL || "") + src;
+          return '<img src="' + escapeHtml(full) + '" alt="" onerror="this.style.display=\'none\'">';
+        }).join("");
+        return '<div class="' + cls + '">' + html + '</div>';
+      }
+      return "";
+    }
+
     function openNewsModal(item) {
-      var gallery = (item.images || []).filter(Boolean);
+      var blocksHtml = (item.blocks || []).map(renderNewsBlock).join("");
       newsModalBody.innerHTML =
         '<div class="date">' + escapeHtml(item.date) + '</div>' +
         '<h3>' + escapeHtml(item.title) + '</h3>' +
-        '<div class="content">' + escapeHtml(item.content) + '</div>' +
-        (gallery.length > 0
-          ? '<div class="board-modal-gallery">' +
-              gallery.map(function (src) {
-                var full = (window.SITE_BASEURL || "") + src;
-                return '<img src="' + escapeHtml(full) + '" alt="" onerror="this.style.display=\'none\'">';
-              }).join("") +
-            '</div>'
-          : "");
+        blocksHtml;
       newsModal.classList.add("open");
       newsModal.setAttribute("aria-hidden", "false");
     }

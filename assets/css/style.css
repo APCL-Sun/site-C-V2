@@ -337,11 +337,14 @@ h1,h2,h3,h4{
 .board-modal-close:hover{ color: var(--text); border-color: var(--flame-1); }
 .board-modal-body .date{ font-family: var(--font-mono); color: var(--flame-2); font-size: 0.85rem; }
 .board-modal-body h3{ font-size: 1.3rem; margin: 10px 0 18px; }
-.board-modal-body .content{ color: var(--text-dim); white-space: pre-line; margin-bottom: 20px; }
+.board-modal-body .content-block{ color: var(--text-dim); white-space: pre-line; margin: 0 0 20px; }
 .board-modal-gallery{
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 10px;
+  margin-bottom: 20px;
 }
 .board-modal-gallery img{ border-radius: var(--radius); border: 1px solid var(--line); aspect-ratio: 16/10; object-fit: cover; }
+.board-modal-gallery.large{ grid-template-columns: 1fr; }
+.board-modal-gallery.large img{ aspect-ratio: 16/9; }
 @media (max-width: 640px){
   .board-modal-content{ margin: 0; max-height: 100vh; border-radius: 0; }
 }
