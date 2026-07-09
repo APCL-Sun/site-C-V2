@@ -31,4 +31,5 @@ permalink: /news/
   </div>
 </div>
 
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
 <script type="application/json" id="newsData">{{ site.data.news | jsonify }}</script>

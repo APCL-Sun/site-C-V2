@@ -147,7 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
         (gallery.length > 0
           ? '<div class="board-modal-gallery">' +
               gallery.map(function (src) {
-                return '<img src="' + escapeHtml(src) + '" alt="" onerror="this.style.display=\'none\'">';
+                var full = (window.SITE_BASEURL || "") + src;
+                return '<img src="' + escapeHtml(full) + '" alt="" onerror="this.style.display=\'none\'">';
               }).join("") +
             '</div>'
           : "");
