@@ -73,8 +73,10 @@
     - type: images
       size: normal
       images:
-        - "/assets/images/news/260223-3.jpg"
-        - "/assets/images/news/260223-4.jpg"
+        -src: "/assets/images/news/260223-3.jpg"
+        orientation: portrait
+        -src: "/assets/images/news/260223-4.jpg"
+        orientation: portrait
     - type: images
       size: large
       images:
