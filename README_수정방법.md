@@ -143,6 +143,18 @@ Git과 GitHub Desktop 같은 프로그램에 익숙하다면 평소처럼 `git p
   - `size: normal` (또는 `size:` 줄 자체를 생략) → 사진 여러 장을 나란히 배치
   - `size: large` → 사진 1장을 큼직하게 강조 (사진 1장만 넣을 때 추천)
 
+**세로로 찍은 사진**은 아래처럼 `orientation: portrait`를 추가해주세요. 안 그러면 가로 사진 기준
+박스에 맞춰 위아래가 잘릴 수 있어요.
+
+```yaml
+    - type: images
+      size: normal
+      images:
+        - "/assets/images/news/가로사진.jpg"          # 가로 사진은 그냥 경로만
+        - src: "/assets/images/news/세로사진.jpg"       # 세로 사진은 이렇게
+          orientation: portrait
+```
+
 글과 사진 블록을 원하는 만큼 계속 추가하면 됩니다. 사진이 없는 소식은 `images` 블록 없이
 `text` 블록만 넣으면 됩니다.
 

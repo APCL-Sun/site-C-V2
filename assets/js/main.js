@@ -161,9 +161,12 @@ document.addEventListener("DOMContentLoaded", function () {
         var imgs = (block.images || []).filter(Boolean);
         if (imgs.length === 0) return "";
         var cls = "board-modal-gallery" + (block.size === "large" ? " large" : "");
-        var html = imgs.map(function (src) {
+        var html = imgs.map(function (img) {
+          var src = (typeof img === "string") ? img : img.src;
+          var orientation = (typeof img === "object" && img.orientation === "portrait") ? "portrait" : "landscape";
           var full = (window.SITE_BASEURL || "") + src;
-          return '<img src="' + escapeHtml(full) + '" alt="" onerror="this.style.display=\'none\'">';
+          var imgCls = orientation === "portrait" ? ' class="portrait"' : "";
+          return '<img' + imgCls + ' src="' + escapeHtml(full) + '" alt="" onerror="this.style.display=\'none\'">';
         }).join("");
         return '<div class="' + cls + '">' + html + '</div>';
       }
