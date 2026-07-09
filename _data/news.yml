@@ -69,6 +69,9 @@
       size: large
       images:
         - "/assets/images/news/260223-1.jpg"
+    - type: images
+      size: large
+      images:
         - "/assets/images/news/260223-2.jpg"
     - type: images
       size: normal
