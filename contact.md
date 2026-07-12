@@ -31,8 +31,8 @@ permalink: /contact/
       {% if site.recruiting %}
       <div class="recruit-box">
         <h3>대학원생 모집 (석사·박사과정)</h3>
-        <p>{{ site.recruiting_text }}</p>
         <p>
+          2027년 전기 석사/박사과정 대학원생을 상시 모집합니다.
           관심 있는 분은 이메일로 간단한 자기소개, 성적증명서, 하고 싶은 연구 분야를
           정리하여 <a href="mailto:{{ site.email }}">{{ site.email }}</a> 로 보내주세요.
           면담 일정을 조율해드립니다.

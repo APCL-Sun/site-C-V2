@@ -19,11 +19,13 @@
 #      - "/assets/images/news/사진1.jpg"
 #      - "/assets/images/news/사진2.jpg
 
+
+
 - date: "2026.05.19"
   title: "2026년 한국추진공학회 춘계학술대회"
   blocks:
     - type: text
-      text: >
+      text: |
         2026년 5월 19일(화)~22일(금)까지 롯데호텔 제주에서 개최되었습니다.
         APCL 연구원들도 한국추진공학회 춘계학술대회에 참가했습니다.
     - type: images
@@ -76,12 +78,11 @@
     - type: images
       size: normal
       images:
-        -src: "/assets/images/news/260223-3.jpg"
+      - src: "/assets/images/news/260223-3.jpg"
         orientation: portrait
-        -src: "/assets/images/news/260223-4.jpg"
+      - src: "/assets/images/news/260223-4.jpg"
         orientation: portrait
     - type: images
       size: large
       images:
         - "/assets/images/news/260223-5.jpg"
-

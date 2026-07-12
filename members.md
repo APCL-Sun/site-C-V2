@@ -8,7 +8,6 @@ permalink: /members/
   <div class="section-head">
     <span class="section-eyebrow">Members</span>
     <h2>구성원</h2>
-    <p class="section-sub">구성원 정보는 <code>_data/members.yml</code> 파일에서 관리됩니다.</p>
   </div>
 </section>
 

@@ -52,7 +52,7 @@ phd_students:
     name_en: "Yongsun Choi"
     year: "박사과정 1년차"
     email: "kim.cs@chungbuk.ac.kr"
-    research: "여기에 짧게 연구 분야 한 줄"
+    research: "Spray characteristics of thruster and liquid rocket engine injectors"
     photo: "/assets/images/members/CYS-A.png"
     photo_alt: "/assets/images/members/CYS-B.png"   # 더블클릭하면 이 사진으로
 
@@ -62,7 +62,7 @@ ms_students:
     name_en: "Jeongho Park"
     year: "석사과정 2년차"
     email: "jh092207@cbnu.ac.kr"
-    research: "여기에 짧게 연구 분야 한 줄"
+    research: "Spray characteristics of swirl coaxial injectors Spray instabilities in swirl type injectors"
     photo: "/assets/images/members/PJH-A.png"
     photo_alt: "/assets/images/members/PJH-B.png"
   - name_kr: "정웅태"

@@ -8,7 +8,7 @@ permalink: /news/
   <div class="section-head">
     <span class="section-eyebrow">News &amp; Gallery</span>
     <h2>연구실 소식</h2>
-    <p class="section-sub">학회 발표, 수상, 워크숍 등 연구실 소식입니다. 소식 내용은 <code>_data/news.yml</code> 파일에서 관리됩니다.</p>
+    <p class="section-sub">학회 발표, 수상, 워크숍 등 연구실 소식입니다.</p>
   </div>
 </section>
 

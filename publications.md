@@ -8,7 +8,6 @@ permalink: /publications/
   <div class="section-head">
     <span class="section-eyebrow">Publications</span>
     <h2>연구 실적</h2>
-    <p class="section-sub">논문/특허/학술대회 목록은 <code>_data/publications.yml</code> 파일에서 관리됩니다.</p>
   </div>
 </section>
 

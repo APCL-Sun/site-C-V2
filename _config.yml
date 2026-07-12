@@ -11,7 +11,7 @@ university: "Chungbuk National University"
 description: "충북대학교 기계공학부 고급추진연소연구실(APCL) 공식 홈페이지입니다."
 
 email: "kbahn@cbnu.ac.kr"      # 실제 대표 이메일로 변경하세요
-address_kr: "충청북도 청주시 서원구 충대로 1, 충북대학교 (사무실)E8-7동 123호, (연구실)E8-5동 117호"
+address_kr: "충청북도 청주시 서원구 충대로 1, 충북대학교<br>(사무실)E8-7동 123호<br>(연구실)E8-5동 117호"
 address_en: "Room 123, Engineering Bldg., Chungbuk National University, Cheongju, Korea"
 gmap_query: "충북대학교 공과대학 기계공학부"     # 구글맵 검색어 (Contact 페이지 지도용)
 
